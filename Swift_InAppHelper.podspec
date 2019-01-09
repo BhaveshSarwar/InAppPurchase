@@ -18,6 +18,8 @@ Pod::Spec.new do |s|
   s.name         = "Swift_InAppHelper"
   s.version      = "0.1.0"
   s.summary      = "This is InAppPurchase helper in Swift with StoreKit"
+  s.swift_version  	 = "4.2"
+
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -28,7 +30,7 @@ Pod::Spec.new do |s|
 This will allow user to do InAppPurchase Operations
                    DESC
 
-  s.homepage     = "http://EXAMPLE/Swift_InAppHelper"
+  s.homepage     = "https://github.com/BhaveshSarwar/InAppPurchase.git"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -39,7 +41,7 @@ This will allow user to do InAppPurchase Operations
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -53,7 +55,7 @@ This will allow user to do InAppPurchase Operations
   #  profile URL.
   #
 
-  s.author             = { "Bhavesh Sarwar" => "bsarwar@Inspeero.com" }
+  s.author             = { "Bhavesh Sarwar" => "bhavesh7sarwar@inspeero.com" }
   # Or just: s.author    = "Bhavesh Sarwar"
   # s.authors            = { "Bhavesh Sarwar" => "bsarwar@Inspeero.com" }
   # s.social_media_url   = "http://twitter.com/Bhavesh Sarwar"
@@ -68,7 +70,7 @@ This will allow user to do InAppPurchase Operations
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
+    s.ios.deployment_target = "10.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
@@ -80,7 +82,7 @@ This will allow user to do InAppPurchase Operations
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/Swift_InAppHelper.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/BhaveshSarwar/InAppPurchase.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,8 +93,8 @@ This will allow user to do InAppPurchase Operations
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "InAppHelper/*"
+  #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
